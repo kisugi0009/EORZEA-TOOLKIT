@@ -473,29 +473,29 @@ select.fi{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns=
       </div>
     </div>
     <div class="rgrid" style="grid-template-columns:1fr 1fr">
-      <div class="rc"><div class="rl">稅後售價</div><div class="rv" id="c-after-tax">—</div><div class="rs">Gill</div></div>
-      <div class="rc"><div class="rl">稅額扣除</div><div class="rv" id="c-tax-amt">—</div><div class="rs">Gill</div></div>
+      <div class="rc"><div class="rl">稅後售價</div><div class="rv" id="c-after-tax">—</div><div class="rs">Gil</div></div>
+      <div class="rc"><div class="rl">稅額扣除</div><div class="rv" id="c-tax-amt">—</div><div class="rs">Gil</div></div>
     </div>
   </div>
   <div class="sec"><div class="sl">區塊二 · 素材成本</div>
     <div style="margin-bottom:12px">
       <div style="font-size:11px;color:var(--txd);margin-bottom:7px;font-weight:500">單件素材消耗</div>
       <div class="sn">* 即使材料自採也需要填入市場單價</div>
-      <div class="mhd"><span>素材名稱</span><span>單價（Gill）</span><span>數量</span><span></span></div>
+      <div class="mhd"><span>素材名稱</span><span>單價（Gil）</span><span>數量</span><span></span></div>
       <div id="mat-list"></div>
       <button class="addbtn" onclick="addMat()">+ 新增素材</button>
     </div>
     <div style="border-top:1px solid var(--bd);padding-top:12px">
       <div style="font-size:11px;color:var(--txd);margin-bottom:9px;font-weight:500">單件水晶消耗</div>
       <div class="two">
-        <div class="field"><label>水晶單價（Gill）</label><input class="fi" id="c-cp" type="number" placeholder="0" min="0" oninput="calcAll();saveCraft()"></div>
+        <div class="field"><label>水晶單價（Gil）</label><input class="fi" id="c-cp" type="number" placeholder="0" min="0" oninput="calcAll();saveCraft()"></div>
         <div class="field"><label>數量</label><input class="fi" id="c-cq" type="number" placeholder="0" min="0" oninput="calcAll();saveCraft()"></div>
       </div>
     </div>
     <div class="rgrid" style="grid-template-columns:1fr 1fr 1fr">
-      <div class="rc"><div class="rl">素材總市價</div><div class="rv" id="c-mt">—</div><div class="rs">Gill</div></div>
-      <div class="rc"><div class="rl">水晶總市價</div><div class="rv" id="c-ct">—</div><div class="rs">Gill</div></div>
-      <div class="rc"><div class="rl">單件毛利</div><div class="rv" id="c-gross">—</div><div class="rs">Gill</div></div>
+      <div class="rc"><div class="rl">素材總市價</div><div class="rv" id="c-mt">—</div><div class="rs">Gil</div></div>
+      <div class="rc"><div class="rl">水晶總市價</div><div class="rv" id="c-ct">—</div><div class="rs">Gil</div></div>
+      <div class="rc"><div class="rl">單件毛利</div><div class="rv" id="c-gross">—</div><div class="rs">Gil</div></div>
     </div>
     <div class="lossw" id="loss-warn">你這是搓身體健康餒！就算是月卡也不是這樣揮霍餒！把素材賣一賣卡實在啦ლ(´•д• ̀ლ</div>
   </div>
@@ -507,18 +507,18 @@ select.fi{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns=
     <div class="togrow"><label class="toglabel">使用食品</label><input type="checkbox" class="tog" id="food-tog" onchange="toggleFood()"></div>
     <div id="food-fields" style="display:none">
       <div class="two">
-        <div class="field"><label>食品市價（Gill）</label><input class="fi" id="c-fp" type="number" placeholder="0" min="0" oninput="calcAll();saveCraft()"></div>
+        <div class="field"><label>食品市價（Gil）</label><input class="fi" id="c-fp" type="number" placeholder="0" min="0" oninput="calcAll();saveCraft()"></div>
         <div class="field"><label>使用數量</label><input class="fi" id="c-fq" type="number" placeholder="1" min="1" value="1" oninput="calcAll();saveCraft()"></div>
       </div>
-      <div class="rc" style="margin-bottom:9px"><div class="rl">食物總市價</div><div class="rv" id="c-ft">—</div><div class="rs">Gill</div></div>
+      <div class="rc" style="margin-bottom:9px"><div class="rl">食物總市價</div><div class="rv" id="c-ft">—</div><div class="rs">Gil</div></div>
     </div>
     <div class="rgrid" style="grid-template-columns:1fr 1fr 1fr">
-      <div class="rc"><div class="rl">總成本</div><div class="rv" id="c-tc">—</div><div class="rs">Gill</div></div>
-      <div class="rc"><div class="rl">批量淨利</div><div class="rv" id="c-net">—</div><div class="rs">Gill</div></div>
-      <div class="rc"><div class="rl">單件純利</div><div class="rv" id="c-up">—</div><div class="rs">Gill/件</div></div>
+      <div class="rc"><div class="rl">總成本</div><div class="rv" id="c-tc">—</div><div class="rs">Gil</div></div>
+      <div class="rc"><div class="rl">批量淨利</div><div class="rv" id="c-net">—</div><div class="rs">Gil</div></div>
+      <div class="rc"><div class="rl">單件純利</div><div class="rv" id="c-up">—</div><div class="rs">Gil/件</div></div>
     </div>
     <div class="rgrid" style="grid-template-columns:1fr;margin-top:9px">
-      <div class="rc"><div class="rl">製造時薪</div><div class="rv" id="c-hourly" style="font-size:20px">—</div><div class="rs">Gill / 小時</div></div>
+      <div class="rc"><div class="rl">製造時薪</div><div class="rv" id="c-hourly" style="font-size:20px">—</div><div class="rs">Gil / 小時</div></div>
     </div>
   </div>
 </div></div>
